@@ -197,7 +197,7 @@ function ca_staff_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Staff';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -263,7 +263,7 @@ function ca_staff_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Staff';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

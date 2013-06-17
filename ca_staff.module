@@ -45,8 +45,10 @@ function ca_staff_menu_alter(&$items) {
  * Implements hook_panels_pre_render().
  */
 function ca_staff_panels_pre_render($panel, $renderer) {
-  if (isset($panel->content['new-3']) && $panel->content['new-3']->subtype == 'ca_staff-ca_staff_grid_1') {
-    $panel->title = variable_get('ca_staff_panel_title', 'Staff');
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_staff_list-ca_staff_grid_1') {
+      $panel->title = variable_get('ca_staff_panel_title', 'Staff');
+    }
   }
 }
 

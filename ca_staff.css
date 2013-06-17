@@ -1,24 +1,22 @@
-.view-ca-staff tr, .view-ca-staff tr.even  {
-  background: none repeat scroll 0 0 transparent;
-}
+.view-ca-staff tr, .view-ca-staff tr.even  {background: none repeat scroll 0 0 transparent;}
 
-.view-ca-staff tr td {
-  width: 25%
-}
+.view-ca-staff tr td {width: 25%}
 
-.ca-news-list-template-1 .view-ca-staff tr td, .ca-news-list-template-1 .view-ca-staff tr th, .ca-news-list-template-1 .views-field-field-ca-staff-s-title {
-  text-align: center;
-}
+.ca-news-list-template-1 .view-ca-staff tr td, .ca-news-list-template-1 .view-ca-staff tr th, .ca-news-list-template-1 .views-field-field-ca-staff-s-title {text-align: center;}
 
-#staff-images {
-  float: left;
-  padding: 30px;
-}
+.ca-news-list-template-1 .views-field-field-ca-staff-s-title {max-width: 200px;}
 
-#staff-images .views-field-field-ca-staff-s-image-1 a {
-  padding: 0 5px 5px 0;
-}
+.views-field-field-ca-staff-s-title h3 {margin: 0;}
+
+#staff-images {float: left; padding: 30px;}
+
+#staff-images .views-field-field-ca-staff-s-image-1 a {padding: 0 5px 5px 0;}
 
 .ca-news-list-template-2 .views-field-field-ca-staff-s-image {float: left; margin-right: 10px;}
 
 .view-ca-staff-list .views-field-addtoany-link, .view-ca-staff-list .views-field-nothing {clear: both;}
+
+.pane-ca-staff-node-ca-staff-node-1a {float: left; padding: 0 15px 5px 0;}
+.pane-ca-staff-node-ca-staff-node-1b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
+.pane-ca-staff-node-ca-staff-node-1b table {margin: 0;}
+.pane-ca-staff-node-ca-staff-node-1b td {padding: 0;}

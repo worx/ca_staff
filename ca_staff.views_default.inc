@@ -335,7 +335,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_square',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
@@ -347,6 +347,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_title']['label'] = '';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['text'] = '<i>[field_ca_staff_s_title]</i>';
+  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
@@ -357,6 +358,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Sort criterion: Weight: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
@@ -419,7 +421,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_square',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
@@ -431,6 +433,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_title']['label'] = '';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['text'] = '<i>[field_ca_staff_s_title]</i>';
+  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
@@ -554,11 +557,12 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'crop_default_square',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
     'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
   );
   $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';

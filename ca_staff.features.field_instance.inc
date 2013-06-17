@@ -96,6 +96,23 @@ function ca_staff_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 0,
+        'manualcrop_enable' => 1,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(
+          'crop_default_square' => 'crop_default_square',
+          'crop_medium_square' => 'crop_medium_square',
+        ),
+        'manualcrop_styles_list' => array(
+          'crop_default_square' => 'crop_default_square',
+          'crop_medium_square' => 'crop_medium_square',
+        ),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
         'preview_image_style' => 'default',
         'progress_indicator' => 'throbber',
       ),

@@ -42,7 +42,7 @@ function ca_staff_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-staff-node-template-1',
+    'body_classes_to_add' => 'ca-staff-node ca-staff-node-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -173,7 +173,7 @@ function ca_staff_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-1',
+    'body_classes_to_add' => 'ca-staff-list ca-staff-grid-4 ca-staff-list-template-1',
     'access' => array(
       'plugins' => array(
         0 => array(
@@ -239,7 +239,7 @@ function ca_staff_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-2',
+    'body_classes_to_add' => 'ca-staff-list ca-staff-list-template-2',
     'access' => array(
       'plugins' => array(
         0 => array(
@@ -417,6 +417,8 @@ function ca_staff_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-admin ca-staff-admin',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -515,6 +517,8 @@ function ca_staff_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-admin ca-staff-admin',
   );
   $display = new panels_display();
   $display->layout = 'onecol';

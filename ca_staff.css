@@ -16,7 +16,9 @@
 
 .view-ca-staff-list .views-field-addtoany-link, .view-ca-staff-list .views-field-nothing {clear: both;}
 
-.pane-ca-staff-node-ca-staff-node-1a {float: left; padding: 0 15px 5px 0;}
+.pane-ca-staff-node-ca-staff-node-1a {float: left;}
 .pane-ca-staff-node-ca-staff-node-1b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
 .pane-ca-staff-node-ca-staff-node-1b table {margin: 0;}
 .pane-ca-staff-node-ca-staff-node-1b td {padding: 0;}
+
+.pane-ca-staff-node-ca-staff-node-1a .views-field-field-ca-staff-s-image {float: left; padding: 0 15px 5px 0;}

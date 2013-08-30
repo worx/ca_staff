@@ -793,6 +793,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Staff: Sort';
   $handler->display->display_options['pane_category']['name'] = 'CA Sort';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['ca_staff_sort'] = $view;
 
   return $export;

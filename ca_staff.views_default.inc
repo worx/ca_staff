@@ -22,6 +22,7 @@ function ca_staff_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -467,6 +468,20 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Staff: List View Template Two';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'ca_staff_feed');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['path'] = 'staff/feed';
+  $handler->display->display_options['displays'] = array(
+    'ca_staff_grid_1' => 'ca_staff_grid_1',
+    'ca_staff_list_2' => 'ca_staff_list_2',
+    'default' => 0,
+  );
   $export['ca_staff_list'] = $view;
 
   $view = new view();
@@ -662,6 +677,7 @@ function ca_staff_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';

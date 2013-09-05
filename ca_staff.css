@@ -2,9 +2,13 @@
 
 .view-ca-staff tr td {width: 25%}
 
-.ca-news-list-template-1 .view-ca-staff tr td, .ca-news-list-template-1 .view-ca-staff tr th, .ca-news-list-template-1 .views-field-field-ca-staff-s-title {text-align: center;}
+.ca-staff-list-template-1 .view-ca-staff tr td, 
+.ca-staff-list-template-1 .view-ca-staff tr th, 
+.ca-staff-list-template-1 .views-field-field-ca-staff-s-title, 
+.ca-staff-list-template-1 .views-field-title {text-align: center;}
 
-.ca-news-list-template-1 .views-field-field-ca-staff-s-title {max-width: 200px;}
+.ca-staff-list-template-1 .views-field-field-ca-staff-s-title, 
+.ca-staff-list-template-1 .views-field-title {max-width: 200px;}
 
 .views-field-field-ca-staff-s-title h3 {margin: 0;}
 
@@ -12,7 +16,7 @@
 
 #staff-images .views-field-field-ca-staff-s-image-1 a {padding: 0 5px 5px 0;}
 
-.ca-news-list-template-2 .views-field-field-ca-staff-s-image {float: left; margin-right: 10px;}
+.ca-staff-list-template-2 .views-field-field-ca-staff-s-image {float: left; margin-right: 10px;}
 
 .view-ca-staff-list .views-field-addtoany-link, .view-ca-staff-list .views-field-nothing {clear: both;}
 

@@ -58,6 +58,8 @@ function ca_staff_panels_pre_render($panel, $renderer) {
 function ca_staff_views_pre_view(&$view, &$display_id, &$args) {
   if ($display_id == 'ca_staff_grid_1') {
     $view->set_items_per_page(variable_get('ca_staff_grid_count', 16));
+  } elseif ($display_id == 'ca_staff_list_2') {
+    $view->set_items_per_page(variable_get('ca_staff_list_count', 5));
   }
 }
 

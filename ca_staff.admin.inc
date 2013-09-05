@@ -33,10 +33,17 @@ function ca_staff_settings_form() {
   );
   $form['ca_staff_grid_count'] = array(
     '#type' => 'textfield',
-    '#title' => t('Staff members per page'),
+    '#title' => t('Staff members per grid page'),
     '#default_value' => variable_get('ca_staff_grid_count', 16),
     '#required' => TRUE,
-    '#description' => t('How many staff members would you like displayed per page? (must be in increments of 4)'),
+    '#description' => t('How many staff members would you like displayed per grid page? Suggested in groups for 4.'),
+  );
+  $form['ca_staff_list_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Staff members per list page'),
+    '#default_value' => variable_get('ca_staff_list_count', 5),
+    '#required' => TRUE,
+    '#description' => t('How many staff members would you like displayed per list page?'),
   );
   $form['ca_staff_list_template'] = array(
     '#type' => 'select',

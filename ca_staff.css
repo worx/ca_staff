@@ -1,9 +1,9 @@
-.view-ca-staff tr, .view-ca-staff tr.even  {background: none repeat scroll 0 0 transparent;}
+.view-ca-staff-list tr, .view-ca-staff-list tr.even {background: none;}
 
-.view-ca-staff tr td {width: 25%}
+.view-ca-staff-list tr td {padding: 0; width: 25%;}
 
-.ca-staff-list-template-1 .view-ca-staff tr td, 
-.ca-staff-list-template-1 .view-ca-staff tr th, 
+.ca-staff-list-template-1 .view-ca-staff-list tr td, 
+.ca-staff-list-template-1 .view-ca-staff-list tr th, 
 .ca-staff-list-template-1 .views-field-field-ca-staff-s-title, 
 .ca-staff-list-template-1 .views-field-title {text-align: center;}
 
@@ -25,4 +25,4 @@
 .pane-ca-staff-node-ca-staff-node-1b table {margin: 0;}
 .pane-ca-staff-node-ca-staff-node-1b td {padding: 0;}
 
-.pane-ca-staff-node-ca-staff-node-1a .views-field-field-ca-staff-s-image {float: left; padding: 0 15px 5px 0;}
+.pane-ca-staff-node-ca-staff-node-1a .views-field-field-ca-staff-s-image {padding: 0 15px 5px 0;}

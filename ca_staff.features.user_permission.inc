@@ -10,7 +10,7 @@
 function ca_staff_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: create ca_staff content.
+  // Exported permission: 'create ca_staff content'.
   $permissions['create ca_staff content'] = array(
     'name' => 'create ca_staff content',
     'roles' => array(
@@ -21,7 +21,7 @@ function ca_staff_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any ca_staff content.
+  // Exported permission: 'delete any ca_staff content'.
   $permissions['delete any ca_staff content'] = array(
     'name' => 'delete any ca_staff content',
     'roles' => array(
@@ -32,7 +32,7 @@ function ca_staff_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own ca_staff content.
+  // Exported permission: 'delete own ca_staff content'.
   $permissions['delete own ca_staff content'] = array(
     'name' => 'delete own ca_staff content',
     'roles' => array(
@@ -43,7 +43,7 @@ function ca_staff_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any ca_staff content.
+  // Exported permission: 'edit any ca_staff content'.
   $permissions['edit any ca_staff content'] = array(
     'name' => 'edit any ca_staff content',
     'roles' => array(
@@ -54,7 +54,7 @@ function ca_staff_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own ca_staff content.
+  // Exported permission: 'edit own ca_staff content'.
   $permissions['edit own ca_staff content'] = array(
     'name' => 'edit own ca_staff content',
     'roles' => array(

@@ -102,6 +102,7 @@ function ca_staff_field_default_field_instances() {
         'manualcrop_inline_crop' => 0,
         'manualcrop_instant_crop' => 0,
         'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => TRUE,
         'manualcrop_maximize_default_crop_area' => 0,
         'manualcrop_require_cropping' => array(
           'crop_default_square' => 'crop_default_square',

@@ -483,7 +483,7 @@ function ca_staff_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 5,
+            2 => 191817721,
           ),
         ),
         'context' => 'logged-in-user',

@@ -363,7 +363,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
-    'trim_length' => '25',
+    'trim_length' => '200',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -451,7 +451,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
-    'trim_length' => '25',
+    'trim_length' => '200',
   );
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';

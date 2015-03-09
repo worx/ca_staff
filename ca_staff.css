@@ -26,3 +26,14 @@
 .pane-ca-staff-node-ca-staff-node-1b td {padding: 0;}
 
 .pane-ca-staff-node-ca-staff-node-1a .views-field-field-ca-staff-s-image {padding: 0 15px 5px 0;}
+
+/* Flex List */
+.ca-staff-flex .view-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ca-staff-flex .views-row {
+  text-align: center;
+  width: 25%;
+}

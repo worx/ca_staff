@@ -27,6 +27,7 @@ function ca_staff_list_template_access_settings($form, &$form_state, $conf) {
     '#title' => t('Staff\'s list template'),
     '#options' => array(
       'ca_staff_list_template_one' => t('Template one'),
+      'ca_staff_list_template_one_flex' => t('Template one Flex'),
       'ca_staff_list_template_two' => t('Template two'),
     ),
     '#required' => TRUE,
@@ -55,6 +56,9 @@ function ca_staff_list_template_access_check($conf, $context) {
 function ca_staff_list_template_access_summary($conf, $context) {
   if ($conf['ca_staff_list_template'] == 'ca_staff_list_template_one') {
     $template = t('Template one');
+  }
+  elseif ($conf['ca_staff_list_template'] == 'ca_staff_list_template_one_flex') {
+    $template = t('Template one Flex');
   }
   else {
     $template = t('Template two');

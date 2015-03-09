@@ -31,6 +31,17 @@ function ca_staff_settings_form() {
     '#required' => TRUE,
     '#description' => t('What would you like the panel title to be?'),
   );
+  $form['ca_staff_list_template'] = array(
+    '#type' => 'select',
+    '#title' => t('Staff\'s list template'),
+    '#options' => array(
+      'ca_staff_list_template_one' => t('Template one'),
+      'ca_staff_list_template_one_flex' => t('Template one Flex'),
+      'ca_staff_list_template_two' => t('Template two'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_staff_list_template', 'ca_staff_list_template_one'),
+  );
   $form['ca_staff_grid_count'] = array(
     '#type' => 'textfield',
     '#title' => t('Staff members per grid page'),
@@ -44,16 +55,6 @@ function ca_staff_settings_form() {
     '#default_value' => variable_get('ca_staff_list_count', 5),
     '#required' => TRUE,
     '#description' => t('How many staff members would you like displayed per list page?'),
-  );
-  $form['ca_staff_list_template'] = array(
-    '#type' => 'select',
-    '#title' => t('Staff\'s list template'),
-    '#options' => array(
-      'ca_staff_list_template_one' => t('Template one'),
-      'ca_staff_list_template_two' => t('Template two'),
-    ),
-    '#required' => TRUE,
-    '#default_value' => variable_get('ca_staff_list_template', 'ca_staff_list_template_one'),
   );
   
   return system_settings_form($form);

@@ -401,6 +401,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Staff: Grid View Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Staff: List View Template Two */
   $handler = $view->new_display('panel_pane', 'CA Staff: List View Template Two', 'ca_staff_list_2');
@@ -468,6 +469,21 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Staff: List View Template Two';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
+
+  /* Display: CA Staff: Flex View Template One */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Flex View Template One', 'ca_staff_flex_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['pane_title'] = 'CA Staff: Flex View Template One';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'ca_staff_feed');

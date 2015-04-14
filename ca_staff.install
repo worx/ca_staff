@@ -18,7 +18,14 @@ function ca_staff_install() {
   $imce_roles_profiles[191817721] = $imce_roles_profiles_vaule;
 
   variable_set('imce_roles_profiles', $imce_roles_profiles);
-	
+
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_staff_pattern', 'staff/[node:title]');
+
+  // Added the permission assign node weights for Staff Admin.
+  user_role_change_permissions(191817721, 
+    array(
+      'assign node weights' => TRUE,
+    )
+  );
 }

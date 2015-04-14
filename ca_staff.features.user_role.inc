@@ -14,7 +14,7 @@ function ca_staff_user_default_roles() {
   $roles['staff admin'] = array(
     'name' => 'staff admin',
     'weight' => 4,
-    'machine_name' => '',
+    'machine_name' => 'staff_admin',
   );
 
   return $roles;

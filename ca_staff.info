@@ -68,4 +68,3 @@ features[views_view][] = ca_staff_node
 features[views_view][] = ca_staff_sort
 features[weight][] = ca_staff
 features_exclude[field_base][body] = body
-features_exclude[dependencies][views] = views

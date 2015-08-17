@@ -64,6 +64,7 @@ function ca_staff_list_template_access_summary($conf, $context) {
     case 'ca_staff_list_template_two':
       $template = t('Template two');
       break;
+  }
     
   return t('Display template is set to: ' . $template);
 }

@@ -60,6 +60,7 @@ function ca_staff_display_access_summary($conf, $context) {
     case 'ca_staff_display_one_flex':
       $template = t('Display Portrait');
       break;
+  }
     
   return t('Display template is set to: ' . $template);
 }

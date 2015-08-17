@@ -42,6 +42,16 @@ function ca_staff_settings_form() {
     '#required' => TRUE,
     '#default_value' => variable_get('ca_staff_list_template', 'ca_staff_list_template_one'),
   );
+  $form['ca_staff_display'] = array(
+    '#type' => 'select',
+    '#title' => t('Staff\'s display type'),
+    '#options' => array(
+      'ca_staff_display_square' => t('Display Square'),
+      'ca_staff_display_portrait' => t('Display Portrait'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_staff_display', 'ca_staff_display_square'),
+  );
   $form['ca_staff_grid_count'] = array(
     '#type' => 'textfield',
     '#title' => t('Staff members per grid page'),

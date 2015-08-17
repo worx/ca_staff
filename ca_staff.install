@@ -22,6 +22,10 @@ function ca_staff_install() {
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_staff_pattern', 'staff/[node:title]');
 
+  variable_get('ca_staff_list_template', 'ca_staff_list_template_one');
+
+  variable_get('ca_staff_display', 'ca_staff_display_square');
+
   // Added the permission assign node weights for Staff Admin.
   user_role_change_permissions(191817721, 
     array(
@@ -44,4 +48,12 @@ function ca_staff_update_7000() {
       'assign node weight' => TRUE,
     )
   );
+}
+
+/**
+ * Setting worx_aurora_base_enable default so that panels can work corretly when aura base feature is not enabled.
+ * Added the permission assign node weights for Staff Admin.
+ */
+function ca_staff_update_7001() {
+  variable_get('ca_staff_display', 'ca_staff_display_square');
 }

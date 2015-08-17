@@ -54,15 +54,16 @@ function ca_staff_list_template_access_check($conf, $context) {
  * Provide a summary description based upon the checked staff list type.
  */
 function ca_staff_list_template_access_summary($conf, $context) {
-  if ($conf['ca_staff_list_template'] == 'ca_staff_list_template_one') {
-    $template = t('Template one');
-  }
-  elseif ($conf['ca_staff_list_template'] == 'ca_staff_list_template_one_flex') {
-    $template = t('Template one Flex');
-  }
-  else {
-    $template = t('Template two');
-  }
-
+  switch ($conf['ca_staff_list_template']) {
+    case 'ca_staff_list_template_one':
+      $template = t('Template one');
+      break;
+    case 'ca_staff_list_template_one_flex':
+      $template = t('Template one Flex');
+      break;
+    case 'ca_staff_list_template_two':
+      $template = t('Template two');
+      break;
+    
   return t('Display template is set to: ' . $template);
 }

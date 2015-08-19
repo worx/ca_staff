@@ -27,7 +27,7 @@ function ca_staff_display_access_settings($form, &$form_state, $conf) {
     '#title' => t('Staff\'s display type'),
     '#options' => array(
       'ca_staff_display_square' => t('Display Square'),
-      'ca_staff_display_one_flex' => t('Display Portrait'),
+      'ca_staff_display_portrait' => t('Display Portrait'),
     ),
     '#required' => TRUE,
     '#default_value' => $conf['ca_staff_display'],
@@ -57,7 +57,7 @@ function ca_staff_display_access_summary($conf, $context) {
     case 'ca_staff_display_square':
       $template = t('Display Square');
       break;
-    case 'ca_staff_display_one_flex':
+    case 'ca_staff_display_portrait':
       $template = t('Display Portrait');
       break;
   }

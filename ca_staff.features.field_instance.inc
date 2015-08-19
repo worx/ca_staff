@@ -106,11 +106,12 @@ function ca_staff_field_default_field_instances() {
         'manualcrop_maximize_default_crop_area' => 1,
         'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
+          'crop_default_portrait' => 'crop_default_portrait',
           'crop_default_square' => 'crop_default_square',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
-        'preview_image_style' => 'crop_default_landscape',
+        'preview_image_style' => 'crop_default_square',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_miw',

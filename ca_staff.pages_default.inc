@@ -170,7 +170,7 @@ function ca_staff_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-staff-node ca-staff-node-template-1',
+    'body_classes_to_add' => 'ca-staff-node ca-staff-node-template-1 ca-staff-node-template-1-portrait',
     'name' => 'aurora-staff-node-portrait-template-one',
   );
   $display = new panels_display();
@@ -340,7 +340,7 @@ function ca_staff_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-staff-node ca-staff-node-template-1',
+    'body_classes_to_add' => 'ca-staff-node ca-staff-node-template-1 ca-staff-node-template-1-portrait',
     'name' => 'ca-staff-node-portrait-template-one',
   );
   $display = new panels_display();
@@ -396,44 +396,6 @@ function ca_staff_default_page_manager_handlers() {
     $display->content['new-8ceb160c-a64f-473f-96d4-2178fd7589bd'] = $pane;
     $display->panels['middle'][1] = 'new-8ceb160c-a64f-473f-96d4-2178fd7589bd';
     $pane = new stdClass();
-    $pane->pid = 'new-0a4b39ea-e773-4762-8a4e-50e4b386bd34';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_staff_node-ca_staff_node_1a';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = '0a4b39ea-e773-4762-8a4e-50e4b386bd34';
-    $display->content['new-0a4b39ea-e773-4762-8a4e-50e4b386bd34'] = $pane;
-    $display->panels['middle'][2] = 'new-0a4b39ea-e773-4762-8a4e-50e4b386bd34';
-    $pane = new stdClass();
-    $pane->pid = 'new-49d499fe-2dd9-4798-abe1-4b7a07f763e3';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_staff_node-ca_staff_node_1b';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '49d499fe-2dd9-4798-abe1-4b7a07f763e3';
-    $display->content['new-49d499fe-2dd9-4798-abe1-4b7a07f763e3'] = $pane;
-    $display->panels['middle'][3] = 'new-49d499fe-2dd9-4798-abe1-4b7a07f763e3';
-    $pane = new stdClass();
     $pane->pid = 'new-75b82b63-177e-4e57-97f7-aca461c9388b';
     $pane->panel = 'middle';
     $pane->type = 'node_body';
@@ -451,11 +413,11 @@ function ca_staff_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 2;
     $pane->locks = '';
     $pane->uuid = '75b82b63-177e-4e57-97f7-aca461c9388b';
     $display->content['new-75b82b63-177e-4e57-97f7-aca461c9388b'] = $pane;
-    $display->panels['middle'][4] = 'new-75b82b63-177e-4e57-97f7-aca461c9388b';
+    $display->panels['middle'][2] = 'new-75b82b63-177e-4e57-97f7-aca461c9388b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

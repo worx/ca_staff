@@ -26,6 +26,9 @@ function ca_staff_install() {
 
   variable_get('ca_staff_display', 'ca_staff_display_square');
 
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+
   // Added the permission assign node weights for Staff Admin.
   user_role_change_permissions(191817721, 
     array(
@@ -51,9 +54,11 @@ function ca_staff_update_7000() {
 }
 
 /**
- * Setting worx_aurora_base_enable default so that panels can work corretly when aura base feature is not enabled.
- * Added the permission assign node weights for Staff Admin.
+ * Updated to ensure the ca_staff_display variable gets set.
  */
 function ca_staff_update_7001() {
-  variable_get('ca_staff_display', 'ca_staff_display_square');
+  variable_get('ca_staff_display', 'ca_staff_display_square'); 
+
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
 }

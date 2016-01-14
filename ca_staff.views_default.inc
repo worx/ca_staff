@@ -289,16 +289,16 @@ function ca_staff_views_default_views() {
     'ca_staff' => 'ca_staff',
   );
 
-  /* Display: CA Staff: Grid View Template One */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Grid View Template One', 'ca_staff_grid_1');
+  /* Display: CA Staff: Grid View Template One Square */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Grid View Template One Square', 'ca_staff_grid_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA Staff: Grid View Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
-  /* Display: CA Staff: List View Template Two */
-  $handler = $view->new_display('panel_pane', 'CA Staff: List View Template Two', 'ca_staff_list_2');
+  /* Display: CA Staff: List View Template Two Square */
+  $handler = $view->new_display('panel_pane', 'CA Staff: List View Template Two Square', 'ca_staff_list_2');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
@@ -365,8 +365,8 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
-  /* Display: CA Staff: Flex View Template One */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Flex View Template One', 'ca_staff_flex_1');
+  /* Display: CA Staff: Flex View Template One Square */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Flex View Template One Square', 'ca_staff_flex_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -374,7 +374,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['pane_title'] = 'CA Staff: Flex View Template One';
+  $handler->display->display_options['pane_title'] = 'CA Staff: Flex View Template One Square';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
@@ -636,8 +636,8 @@ function ca_staff_views_default_views() {
     'ca_staff' => 'ca_staff',
   );
 
-  /* Display: CA Staff: Node View Template One A */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One A', 'ca_staff_node_1a');
+  /* Display: CA Staff: Node View Template One A Square */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One A Square', 'ca_staff_node_1a');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -711,7 +711,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'staff_square_thumb',
+    'colorbox_node_style' => 'crop_default_square_thumbnail',
     'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
@@ -737,8 +737,8 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: CA Staff: Node View Portrait Template One A */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Portrait Template One A', 'ca_staff_node_portrait_1a');
+  /* Display: CA Staff: Node View Template One A Portrait */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One A Portrait', 'ca_staff_node_portrait_1a');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -787,8 +787,8 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: CA Staff: Node View Portrait Template One B */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Portrait Template One B', 'ca_staff_node_portrait_1b');
+  /* Display: CA Staff: Node View Template One B Portrait  */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One B Portrait ', 'ca_staff_node_portrait_1b');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
@@ -813,7 +813,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'staff_portrait_thumb',
+    'colorbox_node_style' => 'crop_default_portrait_thumbnail',
     'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',

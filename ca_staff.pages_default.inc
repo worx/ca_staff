@@ -587,9 +587,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -30;
+  $handler->weight = -29;
   $handler->conf = array(
-    'title' => 'Aurora Staff: Grid Portrait View Template One',
+    'title' => 'Aurora Staff: Grid View Template One Portrait',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -718,9 +718,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -29;
+  $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'Aurora Staff: Grid View Template One',
+    'title' => 'Aurora Staff: Grid View Template One Square',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -742,6 +742,13 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'worx_aurora_base_settings',
           'settings' => array(
             'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+        3 => array(
+          'name' => 'ca_staff_display',
+          'settings' => array(
+            'ca_staff_display' => 'ca_staff_display_square',
           ),
           'not' => FALSE,
         ),
@@ -793,9 +800,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -28;
+  $handler->weight = -27;
   $handler->conf = array(
-    'title' => 'Aurora Staff: List Portrait View Template Two',
+    'title' => 'Aurora Staff: List View Template Two Portrait',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -924,9 +931,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -27;
+  $handler->weight = -28;
   $handler->conf = array(
-    'title' => 'Aurora Staff: List View Template Two',
+    'title' => 'Aurora Staff: List View Template Two Square',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -948,6 +955,13 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'worx_aurora_base_settings',
           'settings' => array(
             'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+        2 => array(
+          'name' => 'ca_staff_display',
+          'settings' => array(
+            'ca_staff_display' => 'ca_staff_display_square',
           ),
           'not' => FALSE,
         ),
@@ -999,9 +1013,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -26;
+  $handler->weight = -25;
   $handler->conf = array(
-    'title' => 'Aurora Staff: Flex Grid Portrait View Template One',
+    'title' => 'Aurora Staff: Flex Grid View Template One Portrait',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1130,9 +1144,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -25;
+  $handler->weight = -26;
   $handler->conf = array(
-    'title' => 'Aurora Staff: Flex Grid View Template One',
+    'title' => 'Aurora Staff: Flex Grid View Template One Square',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1147,6 +1161,20 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'ca_staff_list_template',
           'settings' => array(
             'ca_staff_list_template' => 'ca_staff_list_template_one_flex',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_staff_display',
+          'settings' => array(
+            'ca_staff_display' => 'ca_staff_display_square',
+          ),
+          'not' => FALSE,
+        ),
+        2 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
           ),
           'not' => FALSE,
         ),
@@ -1198,9 +1226,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -24;
+  $handler->weight = -23;
   $handler->conf = array(
-    'title' => 'CA Staff: Grid Portrait View Template One',
+    'title' => 'CA Staff: Grid View Template One Portrait',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1274,9 +1302,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -23;
+  $handler->weight = -24;
   $handler->conf = array(
-    'title' => 'CA Staff: Grid View Template One',
+    'title' => 'CA Staff: Grid View Template One Square',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1342,9 +1370,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -22;
+  $handler->weight = -21;
   $handler->conf = array(
-    'title' => 'CA Staff: List Portrait View Template Two',
+    'title' => 'CA Staff: List View Template Two Portrait',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1418,9 +1446,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -21;
+  $handler->weight = -22;
   $handler->conf = array(
-    'title' => 'CA Staff: List View Template Two',
+    'title' => 'CA Staff: List View Template Two Square',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1435,6 +1463,13 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'ca_staff_list_template',
           'settings' => array(
             'ca_staff_list_template' => 'ca_staff_list_template_two',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_staff_display',
+          'settings' => array(
+            'ca_staff_display' => 'ca_staff_display_square',
           ),
           'not' => FALSE,
         ),
@@ -1486,9 +1521,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -20;
+  $handler->weight = -19;
   $handler->conf = array(
-    'title' => 'CA Staff: Flex Grid Portrait View Template One',
+    'title' => 'CA Staff: Flex Grid View Template One Portrait',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1496,7 +1531,7 @@ function ca_staff_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-staff-flex ca-staff-grid-4 ca-staff-flex-template-1',
+    'body_classes_to_add' => 'ca-staff-flex ca-staff-flex-template-1 ca-staff-flex-template-1-portrait',
     'access' => array(
       'plugins' => array(
         0 => array(
@@ -1562,9 +1597,9 @@ function ca_staff_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_staff';
   $handler->handler = 'panel_context';
-  $handler->weight = -19;
+  $handler->weight = -20;
   $handler->conf = array(
-    'title' => 'CA Staff: Flex Grid View Template One',
+    'title' => 'CA Staff: Flex Grid View Template One Square',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1579,6 +1614,13 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'ca_staff_list_template',
           'settings' => array(
             'ca_staff_list_template' => 'ca_staff_list_template_one_flex',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_staff_display',
+          'settings' => array(
+            'ca_staff_display' => 'ca_staff_display_square',
           ),
           'not' => FALSE,
         ),

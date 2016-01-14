@@ -10,7 +10,7 @@
 function ca_staff_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ca_staff-body'
+  // Exported field_instance: 'node-ca_staff-body'.
   $field_instances['node-ca_staff-body'] = array(
     'bundle' => 'ca_staff',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function ca_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_staff-field_ca_staff_s_image'
+  // Exported field_instance: 'node-ca_staff-field_ca_staff_s_image'.
   $field_instances['node-ca_staff-field_ca_staff_s_image'] = array(
     'bundle' => 'ca_staff',
     'deleted' => 0,
@@ -106,12 +106,11 @@ function ca_staff_field_default_field_instances() {
         'manualcrop_maximize_default_crop_area' => 1,
         'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
-          'crop_default_portrait' => 'crop_default_portrait',
           'crop_default_square' => 'crop_default_square',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
-        'preview_image_style' => 'crop_default_square',
+        'preview_image_style' => 'crop_default_square_preview',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_miw',
@@ -119,7 +118,7 @@ function ca_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_staff-field_ca_staff_s_title'
+  // Exported field_instance: 'node-ca_staff-field_ca_staff_s_title'.
   $field_instances['node-ca_staff-field_ca_staff_s_title'] = array(
     'bundle' => 'ca_staff',
     'default_value' => NULL,

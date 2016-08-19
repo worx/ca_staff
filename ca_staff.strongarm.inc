@@ -114,7 +114,7 @@ function ca_staff_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_default_ca_staff';
-  $strongarm->value = '0';
+  $strongarm->value = '-50';
   $export['weight_default_ca_staff'] = $strongarm;
 
   $strongarm = new stdClass();

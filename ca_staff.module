@@ -56,9 +56,9 @@ function ca_staff_panels_pre_render($panel, $renderer) {
  * Implements hook_views_pre_render().
  */
 function ca_staff_views_pre_view(&$view, &$display_id, &$args) {
-  if ($display_id == 'ca_staff_grid_1') {
+  if ($display_id == 'ca_staff_grid_1' || $display_id == 'ca_staff_flex_1' || $display_id == 'ca_staff_grid_portrait_1' || $display_id == 'ca_staff_flex_portrait_1') {
     $view->set_items_per_page(variable_get('ca_staff_grid_count', 16));
-  } elseif ($display_id == 'ca_staff_list_2') {
+  } elseif ($display_id == 'ca_staff_list_2' || $display_id == 'ca_staff_list_portrait_2') {
     $view->set_items_per_page(variable_get('ca_staff_list_count', 5));
   }
 }

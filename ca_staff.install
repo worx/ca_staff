@@ -29,10 +29,39 @@ function ca_staff_install() {
   // Get the worx_aurora_base_enable variable to default set if not already set.
   variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
 
-  // Added the permission assign node weights for Staff Admin.
+  // ASet the permissions for Staff Admin.
   user_role_change_permissions(191817721, 
     array(
       'assign node weight' => TRUE,
+      'create ca_staff content' => TRUE,
+      'delete any ca_staff content' => TRUE,
+      'delete own ca_staff content' => TRUE,
+      'edit any ca_staff content' => TRUE,
+      'edit own ca_staff content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Administrator
+  user_role_change_permissions(3, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_staff content' => TRUE,
+      'delete any ca_staff content' => TRUE,
+      'delete own ca_staff content' => TRUE,
+      'edit any ca_staff content' => TRUE,
+      'edit own ca_staff content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Webmaster
+  user_role_change_permissions(4, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_staff content' => TRUE,
+      'delete any ca_staff content' => TRUE,
+      'delete own ca_staff content' => TRUE,
+      'edit any ca_staff content' => TRUE,
+      'edit own ca_staff content' => TRUE,
     )
   );
 }
@@ -61,4 +90,45 @@ function ca_staff_update_7001() {
 
   // Get the worx_aurora_base_enable variable to default set if not already set.
   variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+}
+
+/**
+ * Set the permissions for Staff Admin, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
+ * given these permissions without overridding the feature.
+ */
+ function ca_staff_update_7002() {
+ // ASet the permissions for Staff Admin.
+  user_role_change_permissions(191817721, 
+    array(
+      'create ca_staff content' => TRUE,
+      'delete any ca_staff content' => TRUE,
+      'delete own ca_staff content' => TRUE,
+      'edit any ca_staff content' => TRUE,
+      'edit own ca_staff content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Administrator
+  user_role_change_permissions(3, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_staff content' => TRUE,
+      'delete any ca_staff content' => TRUE,
+      'delete own ca_staff content' => TRUE,
+      'edit any ca_staff content' => TRUE,
+      'edit own ca_staff content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Webmaster
+  user_role_change_permissions(4, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_staff content' => TRUE,
+      'delete any ca_staff content' => TRUE,
+      'delete own ca_staff content' => TRUE,
+      'edit any ca_staff content' => TRUE,
+      'edit own ca_staff content' => TRUE,
+    )
+  );
 }

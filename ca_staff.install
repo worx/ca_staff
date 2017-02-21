@@ -33,11 +33,6 @@ function ca_staff_install() {
   user_role_change_permissions(191817721, 
     array(
       'assign node weight' => TRUE,
-      'create ca_staff content' => TRUE,
-      'delete any ca_staff content' => TRUE,
-      'delete own ca_staff content' => TRUE,
-      'edit any ca_staff content' => TRUE,
-      'edit own ca_staff content' => TRUE,
     )
   );
 
@@ -45,11 +40,6 @@ function ca_staff_install() {
   user_role_change_permissions(3, 
     array(
       'assign node weight' => TRUE,
-      'create ca_staff content' => TRUE,
-      'delete any ca_staff content' => TRUE,
-      'delete own ca_staff content' => TRUE,
-      'edit any ca_staff content' => TRUE,
-      'edit own ca_staff content' => TRUE,
     )
   );
 
@@ -57,11 +47,6 @@ function ca_staff_install() {
   user_role_change_permissions(4, 
     array(
       'assign node weight' => TRUE,
-      'create ca_staff content' => TRUE,
-      'delete any ca_staff content' => TRUE,
-      'delete own ca_staff content' => TRUE,
-      'edit any ca_staff content' => TRUE,
-      'edit own ca_staff content' => TRUE,
     )
   );
 }
@@ -93,30 +78,13 @@ function ca_staff_update_7001() {
 }
 
 /**
- * Set the permissions for Staff Admin, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
- * given these permissions without overridding the feature.
+ * Added the permission assign node weights for Administrator and Webmaster.
  */
  function ca_staff_update_7002() {
- // ASet the permissions for Staff Admin.
-  user_role_change_permissions(191817721, 
-    array(
-      'create ca_staff content' => TRUE,
-      'delete any ca_staff content' => TRUE,
-      'delete own ca_staff content' => TRUE,
-      'edit any ca_staff content' => TRUE,
-      'edit own ca_staff content' => TRUE,
-    )
-  );
-
   // Set the permissions for Administrator
   user_role_change_permissions(3, 
     array(
       'assign node weight' => TRUE,
-      'create ca_staff content' => TRUE,
-      'delete any ca_staff content' => TRUE,
-      'delete own ca_staff content' => TRUE,
-      'edit any ca_staff content' => TRUE,
-      'edit own ca_staff content' => TRUE,
     )
   );
 
@@ -124,11 +92,6 @@ function ca_staff_update_7001() {
   user_role_change_permissions(4, 
     array(
       'assign node weight' => TRUE,
-      'create ca_staff content' => TRUE,
-      'delete any ca_staff content' => TRUE,
-      'delete own ca_staff content' => TRUE,
-      'edit any ca_staff content' => TRUE,
-      'edit own ca_staff content' => TRUE,
     )
   );
 }

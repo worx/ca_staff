@@ -289,16 +289,16 @@ function ca_staff_views_default_views() {
     'ca_staff' => 'ca_staff',
   );
 
-  /* Display: CA Staff: Grid View Template One Square */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Grid View Template One Square', 'ca_staff_grid_1');
+  /* Display: CA Staff: Grid View Template One */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Grid View Template One', 'ca_staff_grid_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA Staff: Grid View Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
-  /* Display: CA Staff: List View Template Two Square */
-  $handler = $view->new_display('panel_pane', 'CA Staff: List View Template Two Square', 'ca_staff_list_2');
+  /* Display: CA Staff: List View Template Two */
+  $handler = $view->new_display('panel_pane', 'CA Staff: List View Template Two', 'ca_staff_list_2');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
@@ -365,8 +365,8 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
-  /* Display: CA Staff: Flex View Template One Square */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Flex View Template One Square', 'ca_staff_flex_1');
+  /* Display: CA Staff: Flex View Template One */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Flex View Template One', 'ca_staff_flex_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -374,169 +374,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['pane_title'] = 'CA Staff: Flex View Template One Square';
-  $handler->display->display_options['pane_category']['name'] = 'CA List';
-  $handler->display->display_options['pane_category']['weight'] = '0';
-  $handler->display->display_options['inherit_panels_path'] = '1';
-
-  /* Display: CA Staff: Grid Portrait View Template One */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Grid Portrait View Template One', 'ca_staff_grid_portrait_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['id'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['table'] = 'field_data_field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['field'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'image_style' => 'crop_default_portrait',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['id'] = 'field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['table'] = 'field_data_field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['field'] = 'field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['text'] = '<i>[field_ca_staff_s_title]</i>';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
-    'trim_length' => '200',
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['pane_title'] = 'CA Staff: Grid Portrait View Template One';
-  $handler->display->display_options['pane_category']['name'] = 'CA List';
-  $handler->display->display_options['pane_category']['weight'] = '0';
-  $handler->display->display_options['inherit_panels_path'] = '1';
-
-  /* Display: CA Staff: List Portrait View Template Two */
-  $handler = $view->new_display('panel_pane', 'CA Staff: List Portrait View Template Two', 'ca_staff_list_portrait_2');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['id'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['table'] = 'field_data_field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['field'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'image_style' => 'crop_default_portrait',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['id'] = 'field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['table'] = 'field_data_field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['field'] = 'field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['text'] = '<i>[field_ca_staff_s_title]</i>';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
-    'trim_length' => '200',
-  );
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['pane_title'] = 'CA Staff: List Portrait View Template Two';
-  $handler->display->display_options['pane_category']['name'] = 'CA List';
-  $handler->display->display_options['pane_category']['weight'] = '0';
-  $handler->display->display_options['inherit_panels_path'] = '1';
-
-  /* Display: CA Staff: Flex Portrait View Template One */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Flex Portrait View Template One', 'ca_staff_flex_portrait_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['id'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['table'] = 'field_data_field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['field'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'image_style' => 'crop_default_portrait',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['id'] = 'field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['table'] = 'field_data_field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['field'] = 'field_ca_staff_s_title';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['alter']['text'] = '<i>[field_ca_staff_s_title]</i>';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['field_ca_staff_s_title']['settings'] = array(
-    'trim_length' => '200',
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['pane_title'] = 'CA Staff: Flex View Portrait Template One';
+  $handler->display->display_options['pane_title'] = 'CA Staff: Flex View Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
@@ -636,8 +474,8 @@ function ca_staff_views_default_views() {
     'ca_staff' => 'ca_staff',
   );
 
-  /* Display: CA Staff: Node View Template One A Square */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One A Square', 'ca_staff_node_1a');
+  /* Display: CA Staff: Node View Template One A */
+  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One A', 'ca_staff_node_1a');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -734,108 +572,6 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['pane_title'] = 'CA Staff: Node View Template One B';
-  $handler->display->display_options['pane_category']['name'] = 'CA Node';
-  $handler->display->display_options['pane_category']['weight'] = '0';
-
-  /* Display: CA Staff: Node View Template One A Portrait */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One A Portrait', 'ca_staff_node_portrait_1a');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['id'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['table'] = 'field_data_field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['field'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'crop_default_portrait',
-    'colorbox_node_style_first' => '',
-    'colorbox_image_style' => '',
-    'colorbox_gallery' => 'page',
-    'colorbox_gallery_custom' => '',
-    'colorbox_caption' => 'auto',
-    'colorbox_caption_custom' => '',
-  );
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['pane_title'] = 'CA Staff: Node View Portrait Template One A';
-  $handler->display->display_options['pane_category']['name'] = 'CA Node';
-  $handler->display->display_options['pane_category']['weight'] = '0';
-
-  /* Display: CA Staff: Node View Template One B Portrait  */
-  $handler = $view->new_display('panel_pane', 'CA Staff: Node View Template One B Portrait ', 'ca_staff_node_portrait_1b');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
-  $handler->display->display_options['pager']['options']['offset'] = '1';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['id'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['table'] = 'field_data_field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['field'] = 'field_ca_staff_s_image';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'crop_default_portrait_thumbnail',
-    'colorbox_node_style_first' => '',
-    'colorbox_image_style' => '',
-    'colorbox_gallery' => 'page',
-    'colorbox_gallery_custom' => '',
-    'colorbox_caption' => 'auto',
-    'colorbox_caption_custom' => '',
-  );
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['pane_title'] = 'CA Staff: Node View Portrait Template One B';
   $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $export['ca_staff_node'] = $view;

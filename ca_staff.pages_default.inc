@@ -319,13 +319,6 @@ function ca_staff_default_page_manager_pages() {
           ),
           'not' => FALSE,
         ),
-        3 => array(
-          'name' => 'ca_staff_display',
-          'settings' => array(
-            'ca_staff_display' => 'ca_staff_display_square',
-          ),
-          'not' => FALSE,
-        ),
       ),
       'logic' => 'and',
     ),
@@ -403,13 +396,6 @@ function ca_staff_default_page_manager_pages() {
           ),
           'not' => FALSE,
         ),
-        2 => array(
-          'name' => 'ca_staff_display',
-          'settings' => array(
-            'ca_staff_display' => 'ca_staff_display_square',
-          ),
-          'not' => FALSE,
-        ),
       ),
       'logic' => 'and',
     ),
@@ -477,13 +463,6 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'ca_staff_list_template',
           'settings' => array(
             'ca_staff_list_template' => 'ca_staff_list_template_one_flex',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'ca_staff_display',
-          'settings' => array(
-            'ca_staff_display' => 'ca_staff_display_square',
           ),
           'not' => FALSE,
         ),
@@ -634,13 +613,6 @@ function ca_staff_default_page_manager_pages() {
           ),
           'not' => FALSE,
         ),
-        1 => array(
-          'name' => 'ca_staff_display',
-          'settings' => array(
-            'ca_staff_display' => 'ca_staff_display_square',
-          ),
-          'not' => FALSE,
-        ),
       ),
       'logic' => 'and',
     ),
@@ -708,13 +680,6 @@ function ca_staff_default_page_manager_pages() {
           'name' => 'ca_staff_list_template',
           'settings' => array(
             'ca_staff_list_template' => 'ca_staff_list_template_one_flex',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'ca_staff_display',
-          'settings' => array(
-            'ca_staff_display' => 'ca_staff_display_square',
           ),
           'not' => FALSE,
         ),

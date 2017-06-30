@@ -499,7 +499,8 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'crop_default_square',
+    'colorbox_node_style' => 'default',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
@@ -695,6 +696,18 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['id'] = 'field_ca_staff_s_image';
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['table'] = 'field_data_field_ca_staff_s_image';
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['field'] = 'field_ca_staff_s_image';
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['label'] = '';
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
+    'image_style' => 'crop_default_square_thumbnail',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_ca_staff_s_image']['delta_offset'] = '0';
   /* Field: Weight: Weight */
   $handler->display->display_options['fields']['weight']['id'] = 'weight';
   $handler->display->display_options['fields']['weight']['table'] = 'weight_weights';

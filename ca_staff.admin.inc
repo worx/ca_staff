@@ -40,7 +40,7 @@ function ca_staff_settings_form() {
       'ca_staff_list_template_two' => t('Template two'),
     ),
     '#required' => TRUE,
-    '#default_value' => variable_get('ca_staff_list_template', 'ca_staff_list_template_one'),
+    '#default_value' => variable_get('ca_staff_list_template', 'ca_staff_list_template_one_flex'),
   );
   $form['ca_staff_grid_count'] = array(
     '#type' => 'textfield',

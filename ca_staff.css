@@ -40,5 +40,5 @@
 
 .ca-staff-flex .views-row {
   text-align: center;
-  width: 25%;
+  flex: 0 1 25%;
 }

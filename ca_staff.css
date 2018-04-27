@@ -23,22 +23,25 @@
 .pane-ca-staff-node-ca-staff-node-1a,
 .pane-ca-staff-node-ca-staff-node-portrait-1a {float: left;}
 .pane-ca-staff-node-ca-staff-node-1a .views-field-field-ca-staff-s-image,
-.pane-ca-staff-node-ca-staff-node-portrait-1a .views-field-field-ca-staff-s-image{padding: 0 15px 5px 0;}
+.pane-ca-staff-node-ca-staff-node-portrait-1a .views-field-field-ca-staff-s-image{margin: 0 15px 5px 0;}
 
 .pane-ca-staff-node-ca-staff-node-1b,
-.pane-ca-staff-node-ca-staff-node-portrait-1b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
+.pane-ca-staff-node-ca-staff-node-portrait-1b {clear: left; float: left; margin: 0 15px 5px 0; width: 200px;}
 .pane-ca-staff-node-ca-staff-node-1b table,
 .pane-ca-staff-node-ca-staff-node-portrait-1b table {margin: 0;}
 .pane-ca-staff-node-ca-staff-node-1b td,
 .pane-ca-staff-node-ca-staff-node-portrait-1b td {padding: 0;}
 
 /* Flex List */
-.ca-staff-flex .view-content {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .ca-staff-flex .views-row {
   text-align: center;
   flex: 0 1 25%;
+  padding: 0 5px;
+}
+
+@media only screen and (min-width: 641px) {
+  .ca-staff-flex .view-content {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }

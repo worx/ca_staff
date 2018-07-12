@@ -499,7 +499,7 @@ function ca_staff_views_default_views() {
   $handler->display->display_options['fields']['field_ca_staff_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_staff_s_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'crop_default_square',
     'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
